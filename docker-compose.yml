@@ -1,7 +1,8 @@
 services:
   app:
     build: .
-    image: gdayredis:latest
+    image: ghcr.io/its-the-vibe/gdayredis:latest
+    pull_policy: always
     env_file:
       - .env
     volumes:
