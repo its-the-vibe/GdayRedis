@@ -82,7 +82,7 @@ func main() {
 			if err := rdb.Ping(ctx).Err(); err != nil {
 				log.Printf("Redis ping failed: %v", err)
 			} else {
-				log.Println("Redis ping: PONG")
+				// log.Println("Redis ping: PONG")
 			}
 		}
 	}

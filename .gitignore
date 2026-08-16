@@ -33,6 +33,8 @@ config.yaml
 # build output
 bin/
 
+gdayredis
+
 # Editor/IDE
 # .idea/
 # .vscode/
