@@ -26,6 +26,7 @@ func loadConfig() (*Config, error) {
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
 	viper.AddConfigPath(".")
+	viper.AddConfigPath("/")
 
 	viper.SetDefault("redis.host", "localhost")
 	viper.SetDefault("redis.port", 6379)
