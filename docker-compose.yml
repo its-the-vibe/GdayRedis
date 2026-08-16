@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    image: gdayredis:latest
+    env_file:
+      - .env
+    volumes:
+      - ./config.yaml:/config.yaml:ro
+    read_only: true
+    # Point to your external Redis instance via config.yaml
+    restart: unless-stopped
