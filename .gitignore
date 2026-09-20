@@ -33,7 +33,7 @@ config.yaml
 # build output
 bin/
 
-gdayredis
+./gdayredis
 
 # Editor/IDE
 # .idea/
